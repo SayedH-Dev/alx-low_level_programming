@@ -7,20 +7,21 @@
 
 int main(void)
 {
-char b;
+char bl;
+char bu;
 
-while (b <= 'z')
+while (bl <= 'z')
 }
-putchar(b);
-b++
+putchar(bl);
+bl++;
 }
-while (b <= 'Z')
+while (bu <= 'Z')
 }
-putchar(b);
-b++
+putchar(bu);
+bu++;
 }
 
-putchar('\n')
+putchar('\n');
 
 return (0);
 }
