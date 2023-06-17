@@ -11,12 +11,12 @@ char bl;
 char bu;
 
 while (bl <= 'z')
-}
+{
 putchar(bl);
 bl++;
 }
 while (bu <= 'Z')
-}
+{
 putchar(bu);
 bu++;
 }
