@@ -7,19 +7,18 @@
 
 int main(void)
 {
-char bl;
-char bu;
+char b;
 
-while (bl <= 'z')
+for (b = 'a' ; b <= 'z' ; b++)
 {
-putchar(bl);
-bl++;
+putchar(b);
 }
-while (bu <= 'Z')
+
+for (b = 'A' ; b <= 'Z' ; b++)
 {
-putchar(bu);
-bu++;
+putchar(b);
 }
+
 
 putchar('\n');
 
