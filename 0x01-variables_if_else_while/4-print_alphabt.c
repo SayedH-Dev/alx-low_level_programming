@@ -9,7 +9,7 @@ int main(void)
 {
 char b;
 
-for (b = 'a' ;b <= 'z'; b++)
+for (b = 'a' ; b <= 'z' ; b++)
 {
 if (b == 'e')
 {
@@ -23,5 +23,5 @@ putchar(b);
 }
 
 putchar('\n');
-return (0)
+return (0);
 }
