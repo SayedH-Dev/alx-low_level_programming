@@ -18,11 +18,8 @@ putchar(x);
 putchar(y);
 if (x != '8')
 {
-if (y != '9')
-{
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
