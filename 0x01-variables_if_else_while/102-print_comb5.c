@@ -13,6 +13,8 @@ for (x = 0; x <= 98; x++)
 {
 for (y = x + 1; y <= 99; y++)
 {
+if (x != y)
+{
 putchar('0' + x / 10);
 putchar('0' + x % 10);
 putchar(' ');
@@ -24,6 +26,7 @@ if (y != 99)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
