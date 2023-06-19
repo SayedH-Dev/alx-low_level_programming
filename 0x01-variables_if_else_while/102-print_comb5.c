@@ -19,7 +19,7 @@ for (y = '0' ; y <= '9' ; y++)
 if (y == x)
 {
 continue;
-{
+}
 for (z = '0' ; z <= '9' ; z++)
 {
 if (z == x)
@@ -49,6 +49,7 @@ if (t != '6')
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
