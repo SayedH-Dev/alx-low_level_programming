@@ -1,28 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - possible combination of 2 double digits
- * Return: 0
- */
+  * main - possible combination of 2 double digits
+  * Return: 0
+  */
+
 int main(void)
 {
 int x;
 int y;
+int z;
+int t;
 
-for (x = 0; x <= 98; x++)
+for (x = '0' ; x <= '9' ; x++)
 {
-for (y = x + 1; y <= 99; y++)
+for (y = '0' ; y <= '9' ; y++)
 {
-if (x != y)
+for (z = '0' ; z <= '9' ; z++)
 {
-putchar('0' + x / 10);
-putchar('0' + x % 10);
+for (t = '0' ; t <= '9' ; t++)
+{
+if (x == z && y > t)
+{
+continue;
+}
+putchar(x);
+putchar(y);
 putchar(' ');
-putchar('0' + y / 10);
-putchar('0' + y % 10);
-if (x != 98)
-{
-if (y != 99)
+putchar(z);
+putchar(t);
+if (x != '9' && y != '8' && z != '9' && t != '9')
 {
 putchar(',');
 putchar(' ');
@@ -31,8 +38,6 @@ putchar(' ');
 }
 }
 }
-
 putchar('\n');
-
 return (0);
 }
