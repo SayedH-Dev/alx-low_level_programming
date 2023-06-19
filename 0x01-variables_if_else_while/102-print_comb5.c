@@ -20,7 +20,6 @@ if (y == x)
 {
 continue;
 }
-putchar(' ');
 for (z = '0' ; z <= '9' ; z++)
 {
 if (z == x && z == y)
@@ -35,6 +34,7 @@ continue;
 }
 putchar(x);
 putchar(y);
+putchar(' ');
 putchar(z);
 putchar(t);
 if (x != '9' && y != '8' && z != '7' && t != '6')
