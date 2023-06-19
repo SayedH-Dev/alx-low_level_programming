@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  * main - possible combination of 2 double digits
+  * main - possible combination of 3 digits
   * Return: 0
   */
 
@@ -10,41 +10,17 @@ int main(void)
 int x;
 int y;
 int z;
-int t;
 
-for (x = '0' ; x <= '9' ; x++)
+for (x = '0' ; x <= '7' ; x++)
 {
-for (y = '0' ; y <= '9' ; y++)
+for (y = x + 1 ; y <= '8' ; y++)
 {
-if (y == x)
+for (z = y + 1 ; z <= '9' ; z++)
 {
-continue;
-{
-for (z = '0' ; z <= '9' ; z++)
-{
-if (z == x)
-{
-if (z == y)
-{
-continue;
-}
-}
-for (t = '0' ; t <= '9' ; t++)
-{
-if (t == x)
-{
-if (t == y)
-{
-if (t == z)
-{
-continue;
-}		}
-}
 putchar(x);
 putchar(y);
 putchar(z);
-putchar(t);
-if (t != '6')
+if (x != '7')
 {
 putchar(',');
 putchar(' ');
