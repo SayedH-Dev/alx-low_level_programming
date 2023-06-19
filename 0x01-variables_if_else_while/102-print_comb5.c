@@ -38,7 +38,8 @@ if (t == y)
 if (t == z)
 {
 continue;
-}               }
+}
+}
 }
 putchar(x);
 putchar(y);
