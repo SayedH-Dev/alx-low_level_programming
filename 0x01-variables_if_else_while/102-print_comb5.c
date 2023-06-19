@@ -22,30 +22,21 @@ continue;
 }
 for (z = '0' ; z <= '9' ; z++)
 {
-if (z == x)
-{
-if (z == y)
+if (z == x && z == y)
 {
 continue;
-}
 }
 for (t = '0' ; t <= '9' ; t++)
 {
-if (t == x)
-{
-if (t == y)
-{
-if (t == z)
+if (t == x && t == y && t == z)
 {
 continue;
-}
-}
 }
 putchar(x);
 putchar(y);
 putchar(z);
 putchar(t);
-if (t != '6')
+if (x != '9' && y != '8' && z != '7' && t != '6')
 {
 putchar(',');
 putchar(' ');
