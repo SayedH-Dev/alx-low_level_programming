@@ -20,20 +20,15 @@ for (z = '0' ; z <= '9' ; z++)
 {
 for (t = '0' ; t <= '9' ; t++)
 {
-if (x == z && y > t)
-{
-continue;
-}
-putchar(x);
-putchar(y);
+if (x > z && (x == z && y >= t) && (x * 10 + y == z * 10 + t))
+continue; 
+putchar('0' + x);
+putchar('0' + y);
 putchar(' ');
-putchar(z);
-putchar(t);
-if (x != '9' && y != '8' && z != '9' && t != '9')
-{
+putchar('0' + z);
+putchar('0' + t);
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
