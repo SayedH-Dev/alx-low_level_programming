@@ -2,18 +2,18 @@
 
 /**
   * _abs - computes the absolut value
-  * @int: number
+  * @r: number
   * Return: 0
   */
-int _abs(int)
+int _abs(int r)
 {
-	if (n >= 0)
+	if (r >= 0)
 	{
-		return (n);
+		return (r);
 	}
 	else
 	{
-		return (-n);
+		return (-r);
 	}
 
 	return (0);
