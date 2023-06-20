@@ -14,6 +14,10 @@ int _islower(int c)
 			return (1);
 		}
 	}
-else
+	else
+	{
+		return (0);
+	}
+
 return (0);
 }
