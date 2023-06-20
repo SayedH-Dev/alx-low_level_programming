@@ -1,7 +1,8 @@
 #ifndef MAIN
 #define MAIN
 
-/*define _putchar*/
+/*define functions*/
 int _putchar(char x);
+void print_alphabet(void);
 
 #endif
