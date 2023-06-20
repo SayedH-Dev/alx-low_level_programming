@@ -2,6 +2,7 @@
 
 /**
   * _islower - checking lower case
+  * @c: int defined in main
   * Return: 1 if lowercase 0 if not
   */
 
