@@ -20,7 +20,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			if (total <= 9 & total != 0)
+			if (total <= 9 && total != 0)
 			{
 				_putchar(' ');
 				_putchar(total + '0');
