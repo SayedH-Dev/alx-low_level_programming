@@ -19,20 +19,20 @@ void times_table(void)
 			{
 				_putchar(total + '0');
 			}
-			if (y != 0)
+			else
 			{
 				_putchar(',');
 				_putchar(' ');
-			}
-			if (total <= 9)
-			{
-				_putchar(' ');
-				_putchar(total + '0');
-			}
-			else
-			{
-				_putchar((total / 10) + '0');
-				_putchar((total % 10) + '0');
+				if (total <= 9)
+				{
+					_putchar(' ');
+					_putchar(total + '0');
+				}
+				else
+				{
+					_putchar((total / 10) + '0');
+					_putchar((total % 10) + '0');
+				}
 			}
 		}
 
