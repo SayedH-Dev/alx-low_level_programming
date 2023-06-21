@@ -23,7 +23,7 @@ void times_table(void)
 			else
 			{
 				_putchar(total / 10);
-				_putchar((total % 10);
+				_putchar(total % 10);
 			}
 			if (y != 9)
 			{
