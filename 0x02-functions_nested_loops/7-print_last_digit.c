@@ -13,6 +13,10 @@ int print_last_digit(int r)
 	{
 		r = -r;
 	}
+	else
+	{
+		continue;
+	}
 
 	lad = r % 10;
 
