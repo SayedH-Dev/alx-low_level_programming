@@ -17,7 +17,7 @@ void times_table(void)
 			total = x * y;
 			if (total <= 9 && y != 0)
 			{
-				_putchar(',')
+				_putchar(',');
 				_putchar(' ');
 				_putchar(total + '0');
 			}
