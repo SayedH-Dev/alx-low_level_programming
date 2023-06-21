@@ -13,10 +13,11 @@ int print_last_digit(int r)
 	{
 		r = -r;
 	}
-
-	lad = r % 10;
-
-	_putchar('0' + lad);
+	while (r >= 0)
+	{
+		lad = r % 10;
+		_putchar('0' + lad);
+	}
 
 	return (0);
 }
