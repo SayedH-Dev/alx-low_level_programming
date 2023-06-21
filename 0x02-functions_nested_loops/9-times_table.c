@@ -18,12 +18,12 @@ void times_table(void)
 			if (total <= 9 && y != 0)
 			{
 				_putchar(' ');
-				_putchar(total + '0');
+				_putchar(total);
 			}
 			else
 			{
-				_putchar(total / 10);
-				_putchar(total % 10);
+				_putchar((total / 10) + '0');
+				_putchar((total % 10) + '0');
 			}
 			if (y != 9)
 			{
