@@ -31,8 +31,8 @@ void times_table(void)
 				_putchar((total % 10) + '0');
 			}
 		}
-		
+
 		_putchar('\n');
-		
+
 	}
 }
