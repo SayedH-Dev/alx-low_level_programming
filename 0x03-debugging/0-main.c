@@ -1,20 +1,16 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
-  * main - testing sign
-  * Return: 0
-  */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
+
 int main(void)
 {
-	int n;
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-	positive_or_negative(n);
+	i = 0;
+	positive_or_negative(i);
 
 	return (0);
 }

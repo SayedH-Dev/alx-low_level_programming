@@ -2,6 +2,6 @@
 #define MAIN
 
 /* functions declaration */
-void positive_or_negative(int n);
+void positive_or_negative(int i);
 
 #endif
