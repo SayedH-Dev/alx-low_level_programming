@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+  * main - testing zero
+  * Return= 0
+  */
 int main(void) 
 {
 
