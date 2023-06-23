@@ -11,7 +11,8 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
-
+	else
+	{
 	int x;
 
 	for (x = 0 ; x < n ; x++)
@@ -20,4 +21,5 @@ void print_line(int n)
 	}
 
 	_putchar('\n');
+	}
 }
