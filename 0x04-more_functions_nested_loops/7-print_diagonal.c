@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  *
-  *
-  *
+  * print_diagonal - to print a diagonal shape
+  * @n: how many times \ should be printed
+  * Return: void
   */
 void print_diagonal(int n)
 {
