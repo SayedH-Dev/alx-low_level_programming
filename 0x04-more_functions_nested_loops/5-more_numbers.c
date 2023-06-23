@@ -20,7 +20,7 @@ void more_numbers(void)
 			}
 			else
 			{
-				_putchar('0' + i);
+				_putchar('0' + y);
 			}
 		}
 
