@@ -18,7 +18,7 @@ void puts2(char *str)
 
 	x = 0;
 
-	while (str[x])
+	while (str[x] != '\0')
 	{
 		printf("%c", str[x]);
 		x = x + 2;
