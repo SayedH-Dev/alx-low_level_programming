@@ -13,19 +13,15 @@ void puts2(char *str)
 
 	if (str == NULL)
 	{
-		break;
+		return;
 	}
 
 	x = 0;
+
 	while (str[x])
 	{
 		printf("%c", str[x]);
 		x = x + 2;
-
-		if (!str[x])
-		{
-			break;
-		}
 	}
 	printf("\n");
 }
