@@ -21,8 +21,8 @@ void puts2(char *str)
 	while (str[x])
 	{
 		printf("%c", str[x]);
+		x = x + 2;
 	}
 
-	x = x + 2;
 	printf("\n");
 }
