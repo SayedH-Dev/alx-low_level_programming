@@ -18,10 +18,11 @@ void puts2(char *str)
 
 	x = 0;
 
-	while (str[x] >=32 && str[x] <= 126)
+	while (str[x])
 	{
 		printf("%c", str[x]);
-		x = x + 2;
 	}
+
+	x = x + 2;
 	printf("\n");
 }
