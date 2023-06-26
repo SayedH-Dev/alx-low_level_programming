@@ -16,7 +16,7 @@ void rev_string(char *s)
 
 	l = strlen(s);
 
-	for (x = 0, y = (l - 1) ; x < y ; x++ ; y--)
+	for (x = 0, y = (l - 1) ; x < y ; x++, y--)
 	{
 		store = s[x];
 		s[x] = s[y];
