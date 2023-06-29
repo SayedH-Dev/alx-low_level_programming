@@ -2,6 +2,7 @@
 
 /**
   * *string_toupper - all lower case to uppercase in a string
+  * @string: string to be checked for lowercase char
   * Return: string
   */
 char *string_toupper(char *string)
