@@ -20,7 +20,6 @@ int charIncl(char *str, char c)
 	return (0);
 }
 
-int charIncl(char *str, char c);
 /**
   * cap_string - capitalize the words in a string
   * @st: string to be capitalized
@@ -30,12 +29,11 @@ char *cap_string(char *st)
 {
 	int x;
 	int capital;
-	char separate[];
+	char separate[] = " \t\n,;.!?\"(){}";
 
-	separate[] = " \t\n,;.!?\"(){}";
 	capital = 1;
 
-	for (x = 0; st[x] != '\0'; x++)
+	for (x = 0 ; st[x] != '\0' ; x++)
 	{
 		if (capital && (st[x] >= 'a' && st[x] <= 'z'))
 		{
