@@ -4,9 +4,8 @@
   * *string_toupper - all lower case to uppercase in a string
   * Return: string
   */
-char *string_toupper(char *)
+char *string_toupper(char *string)
 {
-	int string;
 	int counter;
 
 	counter = 0;
