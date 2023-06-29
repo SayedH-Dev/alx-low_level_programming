@@ -8,17 +8,17 @@
   */
 char *string_toupper(char *str)
 {
-	char *ptr;
+	int element;
 
-	*ptr = str;
+	element = 0;
 
-	while (*ptr != '\0')
+	while (str[element] != '\0')
 	{
-		if (*ptr >= 'a' && *ptr <= 'z')
+		if (str[element] >= 'a' && str[element] <= 'z')
 		{
-			*ptr = *ptr - 32;
+			str[element] = str[element] - 32;
 		}
-		ptr++;
+		element++;
 	}
 
 	return (str);
