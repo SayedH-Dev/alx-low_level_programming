@@ -3,8 +3,8 @@
 /**
   * *_strcat - concatenate 2 strings
   * @dest: main string
-  * @src: string to be added to dest
-  * Return: concatenated string
+  * @src: string to be connected to dest
+  * Return: concatenated string dest after modification
   */
 char *_strcat(char *dest, char *src)
 {
