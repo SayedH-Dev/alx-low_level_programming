@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  * *string_toupper - all lower case to uppercase in a string
+  * *string_toupper - all lowercase to uppercase in a string
   * @str: string to be checked for lowercase char
   * Return: string
   */
