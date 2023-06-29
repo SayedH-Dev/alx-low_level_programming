@@ -2,23 +2,23 @@
 
 /**
   * *string_toupper - all lower case to uppercase in a string
-  * @string: string to be checked for lowercase char
+  * @str: string to be checked for lowercase char
   * Return: string
   */
-char *string_toupper(char *string)
+char *string_toupper(char *str)
 {
-	int counter;
+	int element;
 
-	counter = 0;
+	element = 0;
 
-	while (counter != '\0')
+	while (element != '\0')
 	{
-		if (string[counter] >= 'a' && string[counter] <= 'z')
+		if (str[element] >= 'a' && str[element] <= 'z')
 		{
-			string[counter] = string[counter] - 32;
+			str[element] = str[element] - 32;
 		}
-		counter++;
+		element++;
 	}
 
-	return (string);
+	return (str);
 }
