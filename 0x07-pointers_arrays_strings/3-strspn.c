@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,11 +9,9 @@
   */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int counter;
+	unsigned int counter = 0;
 	int x;
 	int y;
-
-	counter = 0;
 
 	for (x = 0 ; s[x] ; x++)
 	{
