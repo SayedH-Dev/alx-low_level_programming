@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -17,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (x = 0 ; s[x] ; x++)
 	{
-		for (y = 0 ; accept[y]; y++)
+		for (y = 0 ; accept[y] ; y++)
 		{
 			if (s[x] == accept[y])
 			{
