@@ -15,16 +15,19 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	else
+	{
 
 	int x;
 	int y;
-	int result;
+	int multi;
 
 	x = atoi(argv[1]);
 	y = atoi(argv[2]);
-	result = x * y;
+	multi = x * y;
 
-	printf("%d\n", result);
+	printf("%d\n", multi);
+	}
 
 	return (0);
 }
