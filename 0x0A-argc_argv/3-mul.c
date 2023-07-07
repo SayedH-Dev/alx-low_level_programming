@@ -18,13 +18,13 @@ int main(int argc, char *argv[])
 
 	int x;
 	int y;
-	int multi;
+	int result;
 
 	x = atoi(argv[1]);
 	y = atoi(argv[2]);
-	multi = x * y;
+	result = x * y;
 
-	printf("%d\n", multi);
+	printf("%d\n", result);
 
 	return (0);
 }
