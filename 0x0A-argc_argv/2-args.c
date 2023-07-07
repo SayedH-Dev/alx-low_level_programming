@@ -4,7 +4,7 @@
 /**
   * main - function that prints all the arguments
   * @argc: no. of command line arguments
-  * @argv[]: array of strings and every element is an argument
+  * @argv: array of strings and every element is an argument
   * Return: 0
   */
 int main(int argc, char *argv[])
