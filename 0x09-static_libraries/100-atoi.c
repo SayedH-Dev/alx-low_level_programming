@@ -4,7 +4,7 @@
 
 /**
   * _atoi - function that turns string to integer
-  * @s: string to bu turned to int
+  * @s: string to be turned into int
   * Return: result int
   */
 int _atoi(char *s)
