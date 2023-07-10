@@ -18,7 +18,9 @@ char *str_concat(char *s1, char *s2)
 
 	else
 	{
-		char *conc = malloc(strlen(s1) + strlen(s2) + 1);
+		char *conc;
+
+		conc = malloc(strlen(s1) + strlen(s2) + 1);
 
 		if (conc == NULL)
 			return (NULL);
@@ -28,7 +30,9 @@ char *str_concat(char *s1, char *s2)
 
 		return (conc);
 	}
-	char *conc = malloc(strlen(s1) + strlen(s2) + 1);
+	char *conc;
+
+	conc = malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (conc == NULL)
 		return (NULL);
