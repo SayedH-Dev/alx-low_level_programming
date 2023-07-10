@@ -10,29 +10,24 @@
   */
 char *str_concat(char *s1, char *s2)
 {
-	char *conc_str;
-	size_t str1, str2, sum;
+	char *conc;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
-	if (s2 == NULL)
-	{
+
+	else if (s2 == NULL)
 		s2 = "";
-	}
 
-	str1 = strlen(s1);
-	str2 = strlen(s2);
-	sum = str1 + str2 + 1;
-
-	conc_str = malloc(sum);
-	if (conc_str == NULL)
+	else
 	{
-		return (NULL);
-	}
-	strcpy(conc_str, s1);
-	strcat(conc_str, s2);
+		conc = malloc(strlen(s1) + strlen(s2) + 1);
 
-	return (conc_str);
+		if (conc == NULL)
+			return (NULL);
+
+		strcpy(conc, s1);
+		strcat(conc, s2);
+
+		return (conc);
+	}
 }
