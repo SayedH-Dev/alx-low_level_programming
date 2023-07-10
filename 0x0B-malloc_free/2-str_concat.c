@@ -30,13 +30,4 @@ char *str_concat(char *s1, char *s2)
 
 		return (conc);
 	}
-	conc = malloc(strlen(s1) + strlen(s2) + 1);
-
-	if (conc == NULL)
-		return (NULL);
-
-	strcpy(conc, s1);
-	strcat(conc, s2);
-
-	return (conc);
 }
