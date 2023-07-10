@@ -10,6 +10,9 @@
   */
 char *str_concat(char *s1, char *s2)
 {
+	char *conc_str;
+	size_t str1, str2, sum;
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -19,11 +22,9 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	size_t str1 = strlen(s1);
-	size_t str2 = strlen(s2);
-	size_t sum = str1 + str2 + 1;
-
-	char *conc_str;
+	str1 = strlen(s1);
+	str2 = strlen(s2);
+	sum = str1 + str2 + 1;
 
 	conc_str = malloc(sum);
 	if (conc_str == NULL)
