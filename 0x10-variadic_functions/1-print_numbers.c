@@ -4,14 +4,16 @@
 
 /**
  * print_numbers - function that print numbers
- * @separator: pointer to a string 
+ * @separator: pointer to a string
  * @n: no. of integres
  * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list arg;
+
 	va_start(arg, n);
+
 	unsigned int x;
 	int num;
 
