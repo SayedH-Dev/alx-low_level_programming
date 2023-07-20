@@ -3,12 +3,11 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - function that print numbers
- * @separator: pointer to a string
- * @n: no. of integres
- * @...: variable no. of integres
- * Return: void
- */
+  * print_numbers - function that print numbers
+  * @separator: pointer to a string
+  * @n: no. of integres
+  * Return: void
+  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list arg;
