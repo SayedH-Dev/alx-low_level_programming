@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
 	{
 		if (start->str != NULL)
 		{
-			printf("%u %s\n", start->len, start->str);
+			printf("[%u] %s\n", start->len, start->str);
 		}
 		else
 		{
@@ -26,4 +26,3 @@ size_t print_list(const list_t *h)
 	nodeNum++;
 	return (nodeNum);
 }
-
