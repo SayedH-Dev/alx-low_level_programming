@@ -10,7 +10,10 @@ void free_listint2(listint_t **head)
 {
 	listint_t *start, *nNode; /* next node */
 
-	for (start = *head ; start != NULL ; )
+	if (head == NULL)
+		return;
+
+	for (start = (*head) ; start != NULL ; )
 	{
 		nNode = start->next;
 
@@ -18,6 +21,6 @@ void free_listint2(listint_t **head)
 		start = nNode;
 	}
 
-	*head = NULL;
+	(*head) = NULL;
 }
 
