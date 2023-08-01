@@ -22,13 +22,17 @@ size_t print_listint_safe(const listint_t *head)
 		printf("[%p] %d\n", (void *)start, start->n);
 		nodeNum++;
 
-		if (start <= start->next)
+		if ((void *)start <= (void *)start->next)
 		{
 			printf("-> [%p] %d\n", (void *)start->next,
-					start->next->n);
+					start->next ? start->next->n : 0);
+			nodeNum++;
 			exit(98);
 		}
 		start = start->next;
 	}
+	if (nodeNum == 0)
+		printf("(nil)\n");
+
 	return (nodeNum);
 }
