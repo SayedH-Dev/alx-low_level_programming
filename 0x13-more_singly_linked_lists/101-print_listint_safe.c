@@ -1,30 +1,48 @@
 #include "lists.h"
-
+ 
 /**
-  * free_listint2 - function that frees the memory
-  * allocated for a linked list
-  * @head: pointer to a pointer to the linked list head
-  * Return: void
+  * add_nodeint - function that adds a new node at the beginning of a linked
+  * list
+  * @head: pointer to a pointer to the head of linked list
+  * @n: integer to be added
+  * Return: address of the new element, or NULL if it failed
   */
-void free_listint2(listint_t **head)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *start, *nNode; /* next node */
+	listint_t *newNode;
 
-	if (head == NULL)
-		return;
+	newNode = (listint_t *)malloc(sizeof(listint_t));
 
-	for (start = (*head) ; start != NULL ; )
-	{
-		nNode = start->next;
+	if (newNode == NULL)
+		return (NULL);
 
-		free(start);
-		start = nNode;
-	}
+	newNode->n = n;
+	newNode->next = (*head);
+	(*head) = newNode;
 
-	(*head) = NULL;
+	return (newNode);
 }
 
+#include "lists.h"
 
+/**
+  * free_listint - function that frees the memory
+  * allocated for a linked list
+  * @head: pointer to the linked list head
+  * Return: void
+  */
+void free_listint(listint_t *head)
+{
+	listint_t *start, *temp;
+
+	for (start = head ; start != NULL ; )
+	{
+		temp = start;
+		start = start->next;
+
+		free(temp);
+	}
+}
 
 /**
   * print_listint_safe - function that prints linked list
@@ -60,5 +78,26 @@ size_t print_listint_safe(const listint_t *head)
 	if (nodeNum == 0)
 		printf("(nil)\n");
 
+	return (nodeNum);
+}
+
+/**
+  * print_listint - function that prints all elements in a linked list
+  * @h: pointer to the linked list head
+  * Return: no. of nodes in the linked list
+  */
+size_t print_listint(const listint_t *h)
+{
+	size_t nodeNum = 0;
+	const listint_t *start;
+
+	if (h == NULL)
+		return (0);
+
+	for (start = h ; start != NULL ; start = start->next)
+	{
+		printf("%d\n", start->n);
+		nodeNum++;
+	}
 	return (nodeNum);
 }
