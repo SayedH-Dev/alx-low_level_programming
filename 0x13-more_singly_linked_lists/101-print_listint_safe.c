@@ -1,5 +1,5 @@
 #include "lists.h"
- 
+
 /**
   * free_listint - function that frees the memory
   * allocated for a linked list
