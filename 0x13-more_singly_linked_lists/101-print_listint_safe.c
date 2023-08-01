@@ -25,7 +25,6 @@ size_t print_listint_safe(const listint_t *head)
 			nodeNum++;
 			exit(98);
 		}
-		start = start->next;
 	}
 	return (nodeNum);
 }
