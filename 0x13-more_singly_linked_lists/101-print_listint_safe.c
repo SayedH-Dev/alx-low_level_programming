@@ -20,7 +20,8 @@ size_t print_listint_safe(const listint_t *head)
 		nodeNum++;
 		if ((void *)start <= (void *)start->next)
 		{
-			printf("-> [%p] %d\n", (void *)start->next, start->next->n);
+			printf("-> [%p] %d\n", (void *)start->next,
+					start->next->n);
 			nodeNum++;
 			exit(98);
 		}
