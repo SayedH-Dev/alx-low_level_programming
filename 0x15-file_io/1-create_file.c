@@ -1,4 +1,7 @@
 #include "main.h"
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 /**
   * create_file - function that creates a file
@@ -23,6 +26,8 @@ int create_file(const char *filename, char *text_content)
 
 	fclose(new_file);
 
+	if (chmod(filename, 0400 |0200) != 0)
+		return (-1);
 	return (1);
 }
 
