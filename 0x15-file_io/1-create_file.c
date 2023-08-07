@@ -26,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 
 	fclose(new_file);
 
-	if (chmod(filename, 0400 |0200) != 0)
+	if (chmod(filename, 0400 | 0200) != 0)
 		return (-1);
 	return (1);
 }
