@@ -22,6 +22,10 @@ int create_file(const char *filename, char *text_content)
 		fputs(text_content, new_file);
 
 	fclose(new_file);
+
+	if (chmod(filename, 0600) == -1)
+		return (-1);
+
 	return (1);
 }
 
