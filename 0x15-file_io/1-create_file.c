@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 
 	fclose(new_file);
 
-	if (chmod(filename, 0600) == -1)
+	if (text_content != NULL && chmod(filename, 0600) == -1)
 		return (-1);
 
 	return (1);
