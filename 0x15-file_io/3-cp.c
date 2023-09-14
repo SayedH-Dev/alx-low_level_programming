@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-  * copy_file_to - function that copy file from origin to destination path
+  * copy_file_to - function that copy file content from origin to destination file
   * @argc: no. of arguments
   * @argv: pointer to arguments
   * Return: 0 if success, 97 wrong no. of arguments,
